@@ -4,9 +4,9 @@ set demoName=AFEPlayer
 :: 镜像路径
 set appPath=.\desktop\target\app
 :: 模块名称
-set mainPackage=desktop
+set mainPackage=com.acer.afeplayer.desktop
 :: 主类入口
-set mainClass=com.acer.afeplayer.desktop.HelloApplication
+set mainClass=com.acer.afeplayer.desktop.MainApplication
 
 echo ======JavaFXPacker======
 echo 运行前请执行jlink

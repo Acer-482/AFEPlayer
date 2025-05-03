@@ -1,4 +1,4 @@
-module desktop {
+module com.acer.afeplayer.desktop {
     requires com.acer.afeplayer.core;
     requires javafx.controls;
     requires javafx.fxml;
