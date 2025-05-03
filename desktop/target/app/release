@@ -1,2 +1,0 @@
-JAVA_VERSION="21.0.2"
-MODULES="java.base core java.datatransfer java.xml java.prefs java.desktop javafx.base jdk.unsupported javafx.graphics javafx.controls java.scripting javafx.fxml desktop jdk.internal.vm.ci"

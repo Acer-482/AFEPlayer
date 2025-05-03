@@ -1,5 +1,5 @@
 module desktop {
-    requires core;
+    requires com.acer.afeplayer.core;
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;

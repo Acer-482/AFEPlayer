@@ -12,7 +12,6 @@
     <modules>
         <module>core</module> <!--核心模块-->
         <module>desktop</module> <!--桌面平台模块-->
-        <module>test</module> <!--测试模块-->
     </modules>
     <packaging>pom</packaging>
     <!-- 配置 -->

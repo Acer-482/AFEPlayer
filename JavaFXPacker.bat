@@ -1,42 +1,42 @@
 @echo off
-:: é¡¹ç›®åç§°
+:: ÏîÄ¿Ãû³Æ
 set demoName=AFEPlayer
-:: é•œåƒè·¯å¾„
+:: ¾µÏñÂ·¾¶
 set appPath=.\desktop\target\app
-:: æ¨¡å—åç§°
+:: Ä£¿éÃû³Æ
 set mainPackage=desktop
-:: ä¸»ç±»å…¥å£
+:: Ö÷ÀàÈë¿Ú
 set mainClass=com.acer.afeplayer.desktop.HelloApplication
 
 echo ======JavaFXPacker======
-echo è¿è¡Œå‰è¯·æ‰§è¡Œjlink
-echo è¯·æŒ‰æƒ…å†µä¿®æ”¹è„šæœ¬å‰å‡ è¡Œçš„å˜é‡
+echo ÔËĞĞÇ°ÇëÖ´ĞĞjlink
+echo Çë°´Çé¿öĞŞ¸Ä½Å±¾Ç°¼¸ĞĞµÄ±äÁ¿
 echo **BY Acer**
 pause
 
-:: æ£€æŸ¥è·¯å¾„æ˜¯å¦æœ‰æ•ˆ
+:: ¼ì²éÂ·¾¶ÊÇ·ñÓĞĞ§
 if not exist %appPath% (
-    echo jlinkæœªæ‰§è¡Œ æ‰¾ä¸åˆ°é•œåƒè·¯å¾„ï¼
+    echo jlinkÎ´Ö´ĞĞ ÕÒ²»µ½¾µÏñÂ·¾¶£¡
     goto end
 )
 
-:: åˆ—å‡ºè¯¦ç»†ä¿¡æ¯
+:: ÁĞ³öÏêÏ¸ĞÅÏ¢
 echo ======list-modules======
-echo æ­¤å¤„åˆ—å‡ºäº†æ‰€æœ‰æœ‰æ•ˆæ¨¡å—ï¼š
+echo ´Ë´¦ÁĞ³öÁËËùÓĞÓĞĞ§Ä£¿é£º
 %appPath%\bin\java --list-modules
 pause
 
-:: æ¸…ç†ä¸Šä¸€æ¬¡ç”Ÿæˆçš„æ–‡ä»¶
+:: ÇåÀíÉÏÒ»´ÎÉú³ÉµÄÎÄ¼ş
 if exist %demoName% (
 echo ======Cleaning======
 del /F /S /Q %demoName%
 rd /S /Q %demoName%
-echo æ¸…ç†å®Œæˆ...
+echo ÇåÀíÍê³É...
 )
 
 echo ======JPackage======
 jpackage --name %demoName% --type app-image -m %mainPackage%/%mainClass% --runtime-image %appPath%
-echo æ‰“åŒ…å®Œæˆï¼
+echo ´ò°üÍê³É£¡
 
 :end
 echo ======ALL DONE======
